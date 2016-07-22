@@ -1,0 +1,113 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:136), pid=3752, tid=6148
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version:  (7.0_51-b13) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.51-b03 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000002372800):  JavaThread "Unknown thread" [_thread_in_vm, id=6148, stack(0x0000000002190000,0x0000000002290000)]
+
+Stack: [0x0000000002190000,0x0000000002290000]
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000002372800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=6148, stack(0x0000000002190000,0x0000000002290000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.028 loading class 0x00000000023c1530 done
+Event: 0.029 loading class 0x00000000023c0f50 done
+Event: 0.029 loading class 0x00000000023c0f30
+Event: 0.029 loading class 0x00000000023c9070
+Event: 0.029 loading class 0x00000000023c9070 done
+Event: 0.029 loading class 0x00000000023c90a0
+Event: 0.029 loading class 0x00000000023c90a0 done
+Event: 0.029 loading class 0x00000000023c90d0
+Event: 0.029 loading class 0x00000000023c90d0 done
+Event: 0.030 loading class 0x00000000023c0f30 done
+
+
+Dynamic libraries:
+0x00007ff79d8f0000 - 0x00007ff79d923000 	C:\Program Files\Java\jre7\bin\javaw.exe
+0x00007ff91be80000 - 0x00007ff91c041000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ff91bae0000 - 0x00007ff91bb8d000 	C:\WINDOWS\system32\KERNEL32.DLL
+0x00007ff9186c0000 - 0x00007ff9188a8000 	C:\WINDOWS\system32\KERNELBASE.dll
+0x00007ff919280000 - 0x00007ff919327000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x00007ff91bb90000 - 0x00007ff91bc2d000 	C:\WINDOWS\system32\msvcrt.dll
+0x00007ff9195b0000 - 0x00007ff91960b000 	C:\WINDOWS\system32\sechost.dll
+0x00007ff91bd60000 - 0x00007ff91be7c000 	C:\WINDOWS\system32\RPCRT4.dll
+0x00007ff919bc0000 - 0x00007ff919d16000 	C:\WINDOWS\system32\USER32.dll
+0x00007ff919630000 - 0x00007ff9197b6000 	C:\WINDOWS\system32\GDI32.dll
+0x00007ff914350000 - 0x00007ff9145c4000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.10586.0_none_8c15ae12515e1c22\COMCTL32.dll
+0x00007ff919330000 - 0x00007ff9195ad000 	C:\WINDOWS\system32\combase.dll
+0x00007ff918ae0000 - 0x00007ff918b4a000 	C:\WINDOWS\system32\bcryptPrimitives.dll
+0x00007ff919ed0000 - 0x00007ff919f0b000 	C:\WINDOWS\system32\IMM32.DLL
+0x00007ff918390000 - 0x00007ff9183c1000 	C:\WINDOWS\system32\nvinitx.dll
+0x00007ff918380000 - 0x00007ff91838a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x000000000f000000 - 0x000000000f006000 	C:\Program Files\NVIDIA Corporation\CoProcManager\_etoured.dll
+0x00007ff915a50000 - 0x00007ff915a82000 	C:\Program Files\NVIDIA Corporation\CoProcManager\nvd3d9wrapx.dll
+0x00007ff91b6b0000 - 0x00007ff91bad9000 	C:\WINDOWS\system32\SETUPAPI.dll
+0x00007ff918b50000 - 0x00007ff918b93000 	C:\WINDOWS\system32\CFGMGR32.dll
+0x00007ff915a20000 - 0x00007ff915a42000 	C:\Program Files\NVIDIA Corporation\CoProcManager\nvdxgiwrapx.dll
+0x00000000610b0000 - 0x0000000061182000 	C:\Program Files\Java\jre7\bin\msvcr100.dll
+0x00000000608e0000 - 0x00000000610a9000 	C:\Program Files\Java\jre7\bin\server\jvm.dll
+0x00007ff919bb0000 - 0x00007ff919bb8000 	C:\WINDOWS\system32\PSAPI.DLL
+0x00007ff90cc40000 - 0x00007ff90cc49000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ff9166a0000 - 0x00007ff9166c3000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ff9198e0000 - 0x00007ff91994b000 	C:\WINDOWS\system32\WS2_32.dll
+0x00007ff916670000 - 0x00007ff91669c000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x0000000061f00000 - 0x0000000061f0f000 	C:\Program Files\Java\jre7\bin\verify.dll
+0x00000000608b0000 - 0x00000000608d8000 	C:\Program Files\Java\jre7\bin\java.dll
+0x0000000060890000 - 0x00000000608a5000 	C:\Program Files\Java\jre7\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 -Xbootclasspath/p:C:\Users\Amit_722\Desktop\adt-bundle-windows-x86_64-20130729\sdk\platforms\android-22\android.jar 
+java_command: com.example.mypromolta.YoutubeSearch
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:/Program Files/Java/jre1.8.0_60/bin/server;C:/Program Files/Java/jre1.8.0_60/bin;C:/Program Files/Java/jre1.8.0_60/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\adb;C:\Program Files\TortoiseSVN\bin;C:\Windows\SysWOW64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Java\jdk1.8.0_60\bin;C:\Users\Amit_722\AppData\Roaming\npm;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\Amit_722\Desktop\adt-bundle-windows-x86_64-20130729\eclipse;
+USERNAME=Amit
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8 , 64 bit Build 9200 
+
+CPU:total 8 (4 cores per cpu, 2 threads per core) family 6 model 42 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, ht, tsc, tscinvbit
+
+Memory: 4k page, physical 6183080k(2042460k free), swap 7166120k(1678604k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (24.51-b03) for windows-amd64 JRE (1.7.0_51-b13), built on Dec 18 2013 18:40:56 by "java_re" with unknown MS VC++:1600
+
+time: Fri Mar 11 00:16:33 2016
+elapsed time: 0 seconds
+
